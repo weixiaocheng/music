@@ -105,6 +105,7 @@ static MusicManager *manager = nil;
         [self.avaudionDict setObject:play forKey:musicObj.filename];
         
     }
+    musicObj.isPlay = true;
     play.delegate = musicVC;
     
 }
