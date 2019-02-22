@@ -10,7 +10,7 @@
 #import "view/BottomView.h"
 #import "view/CrlView.h"
 #import "view/ShowView.h"
-@interface MusicPlayViewController ()
+@interface MusicPlayViewController ()<BottomViewDelegate,CrlViewDelegate>
 @property (nonatomic, strong) MusicManager *musicManager;
 @property (nonatomic, strong) BottomView *bottomView;
 @property (nonatomic, strong) ShowView *showView;
@@ -45,8 +45,10 @@
 - (void)setUpView
 {
     _bottomView = [[BottomView alloc] initWithFrame:CGRectZero];
+    _bottomView.delegate = self;
     _showView = [[ShowView alloc] initWithFrame:CGRectZero];
     _crlView = [[CrlView alloc] initWithFrame:CGRectZero];
+    _crlView.delegate = self;
     [self.view addSubview:self.bottomView];
     [self.view addSubview:self.crlView];
     [self.view addSubview:self.showView];
@@ -68,5 +70,27 @@
         make.bottom.equalTo(weakSelf.bottomView.mas_top).offset(5);
     }];
 }
+
+#pragma mark -- delegate
+- (void)backCrlView:(CrlView *)crlview
+{
+    [self dismissViewControllerAnimated:true completion:nil];
+}
+
+- (void)playBottomView:(BottomView *)bottomView
+{
+    NSLog(@"点击了上一首");
+}
+
+- (void)nextBottomView:(BottomView *)bottimView
+{
+    NSLog(@"点击了 下一首");
+}
+
+- (void)previousBottomView:(BottomView *)bottomView
+{
+    NSLog(@"点击了 播放 暂停 ");
+}
+
 
 @end

@@ -67,6 +67,10 @@
         make.width.offset(42);
         make.height.offset(48);
     }];
+    
+    // 添加点击事件
+    [self.backBtn addTarget:self action:@selector(dismissView) forControlEvents:UIControlEventTouchUpInside];
+    
 }
 
 - (UITableView *)tableView
@@ -105,6 +109,13 @@
         cell.selectionStyle = UITableViewCellSelectionStyleNone;
     }
     return cell;
+}
+
+
+- (void)dismissView{
+    if ([self.delegate respondsToSelector:@selector(backCrlView:)]) {
+        [self.delegate backCrlView:self];
+    }
 }
 
 @end
