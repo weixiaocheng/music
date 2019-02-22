@@ -8,13 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		181349F2221F820F003FEBA3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 181349F1221F820F003FEBA3 /* AppDelegate.m */; };
-		181349F5221F820F003FEBA3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 181349F4221F820F003FEBA3 /* ViewController.m */; };
-		181349F8221F820F003FEBA3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 181349F6221F820F003FEBA3 /* Main.storyboard */; };
 		181349FA221F8210003FEBA3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 181349F9221F8210003FEBA3 /* Assets.xcassets */; };
 		181349FD221F8210003FEBA3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 181349FB221F8210003FEBA3 /* LaunchScreen.storyboard */; };
 		18134A00221F8210003FEBA3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 181349FF221F8210003FEBA3 /* main.m */; };
 		18134A0A221F8210003FEBA3 /* ameiTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 18134A09221F8210003FEBA3 /* ameiTests.m */; };
 		18134A15221F8210003FEBA3 /* ameiUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 18134A14221F8210003FEBA3 /* ameiUITests.m */; };
+		18134A27221F8441003FEBA3 /* MusicListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18134A26221F8441003FEBA3 /* MusicListViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,9 +37,6 @@
 		181349ED221F820F003FEBA3 /* amei.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = amei.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		181349F0221F820F003FEBA3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		181349F1221F820F003FEBA3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		181349F3221F820F003FEBA3 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		181349F4221F820F003FEBA3 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		181349F7221F820F003FEBA3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		181349F9221F8210003FEBA3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		181349FC221F8210003FEBA3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		181349FE221F8210003FEBA3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -51,6 +47,8 @@
 		18134A10221F8210003FEBA3 /* ameiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ameiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		18134A14221F8210003FEBA3 /* ameiUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ameiUITests.m; sourceTree = "<group>"; };
 		18134A16221F8210003FEBA3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18134A25221F8441003FEBA3 /* MusicListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MusicListViewController.h; sourceTree = "<group>"; };
+		18134A26221F8441003FEBA3 /* MusicListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MusicListViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,11 +99,11 @@
 		181349EF221F820F003FEBA3 /* amei */ = {
 			isa = PBXGroup;
 			children = (
+				18134A24221F824B003FEBA3 /* musicTools */,
+				18134A23221F8243003FEBA3 /* musicList */,
+				18134A22221F8239003FEBA3 /* musicPlay */,
 				181349F0221F820F003FEBA3 /* AppDelegate.h */,
 				181349F1221F820F003FEBA3 /* AppDelegate.m */,
-				181349F3221F820F003FEBA3 /* ViewController.h */,
-				181349F4221F820F003FEBA3 /* ViewController.m */,
-				181349F6221F820F003FEBA3 /* Main.storyboard */,
 				181349F9221F8210003FEBA3 /* Assets.xcassets */,
 				181349FB221F8210003FEBA3 /* LaunchScreen.storyboard */,
 				181349FE221F8210003FEBA3 /* Info.plist */,
@@ -130,6 +128,29 @@
 				18134A16221F8210003FEBA3 /* Info.plist */,
 			);
 			path = ameiUITests;
+			sourceTree = "<group>";
+		};
+		18134A22221F8239003FEBA3 /* musicPlay */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = musicPlay;
+			sourceTree = "<group>";
+		};
+		18134A23221F8243003FEBA3 /* musicList */ = {
+			isa = PBXGroup;
+			children = (
+				18134A25221F8441003FEBA3 /* MusicListViewController.h */,
+				18134A26221F8441003FEBA3 /* MusicListViewController.m */,
+			);
+			path = musicList;
+			sourceTree = "<group>";
+		};
+		18134A24221F824B003FEBA3 /* musicTools */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = musicTools;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -237,7 +258,6 @@
 			files = (
 				181349FD221F8210003FEBA3 /* LaunchScreen.storyboard in Resources */,
 				181349FA221F8210003FEBA3 /* Assets.xcassets in Resources */,
-				181349F8221F820F003FEBA3 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,9 +282,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				181349F5221F820F003FEBA3 /* ViewController.m in Sources */,
 				18134A00221F8210003FEBA3 /* main.m in Sources */,
 				181349F2221F820F003FEBA3 /* AppDelegate.m in Sources */,
+				18134A27221F8441003FEBA3 /* MusicListViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,14 +320,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		181349F6221F820F003FEBA3 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				181349F7221F820F003FEBA3 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		181349FB221F8210003FEBA3 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -438,6 +450,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 56L859Z482;
 				INFOPLIST_FILE = amei/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -455,6 +468,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 56L859Z482;
 				INFOPLIST_FILE = amei/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

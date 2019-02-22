@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-
+#import "musicList/MusicListViewController.h"
 @interface AppDelegate ()
 
 @end
@@ -17,6 +17,11 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    self.window = [[UIWindow alloc] initWithFrame:UIScreen.mainScreen.bounds];
+    MusicListViewController *musciList = [[MusicListViewController alloc] init];
+    UINavigationController *navC = [[UINavigationController alloc] initWithRootViewController:musciList];
+    self.window.rootViewController = navC;
+    [self.window makeKeyAndVisible];
     return YES;
 }
 

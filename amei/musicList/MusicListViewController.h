@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  MusicListViewController.h
 //  amei
 //
 //  Created by apple on 2019/2/22.
@@ -8,8 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+NS_ASSUME_NONNULL_BEGIN
 
+@interface MusicListViewController : UIViewController
 
 @end
 
+NS_ASSUME_NONNULL_END
