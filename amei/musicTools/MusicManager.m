@@ -8,7 +8,7 @@
 
 #import "MusicManager.h"
 #import <AVFoundation/AVFoundation.h>
-
+#import "../musicPlay/MusicPlayViewController.h"
 @interface MusicManager ()
 @property (nonatomic, strong) NSMutableDictionary *avaudionDict;
 @end
@@ -93,8 +93,15 @@ static MusicManager *manager = nil;
         NSURL *fileUrl = [NSURL fileURLWithPath:path];
         NSError *error = nil;
         play = [[AVAudioPlayer alloc] initWithContentsOfURL:fileUrl error:&error];
-        
+        if (error) {
+            NSLog(@"error : %@",error);
+            return;
+        }
+        if ([play prepareToPlay]) {
+            [play play];
+        }
         [self.avaudionDict setObject:play forKey:musicObj.filename];
+        
     }
     play.delegate = musicVC;
     

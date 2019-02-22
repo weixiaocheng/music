@@ -8,12 +8,22 @@
 
 #import "MusicListViewController.h"
 #import "MusicListManager.h"
+#import "../musicPlay/MusicPlayViewController.h"
 @interface MusicListViewController ()<UITableViewDelegate, UITableViewDataSource>
 @property (nonatomic, strong) UITableView *tableView;
 @property (nonatomic, strong) MusicListManager *manager;
+@property (nonatomic, strong) MusicPlayViewController *musicVC;
 @end
 
 @implementation MusicListViewController
+
+- (MusicPlayViewController *)musicVC
+{
+    if (!_musicVC) {
+        _musicVC = [[MusicPlayViewController alloc] init];
+    }
+    return _musicVC;
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -75,6 +85,9 @@
     [cell setSelected:false animated:true];
     MusicOBJ *obj = self.manager.musicList[indexPath.row];
     NSLog(@"\n选中的歌曲是 : %@\n", obj.name);
+    [self presentViewController:self.musicVC animated:true completion:^{
+        self.musicVC.musicObj = obj;
+    }];
 }
 
 @end

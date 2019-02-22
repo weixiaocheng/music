@@ -9,14 +9,27 @@
 #import "MusicPlayViewController.h"
 
 @interface MusicPlayViewController ()
-
+@property (nonatomic, strong) MusicManager *musicManager;
 @end
 
 @implementation MusicPlayViewController
 
+- (MusicManager *)musicManager{
+    if (!_musicManager) {
+        _musicManager = [MusicManager shareInstance];
+    }
+    return _musicManager;
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+}
+
+-(void)setMusicObj:(MusicOBJ *)musicObj
+{
+    _musicObj = musicObj;
+    [self.musicManager playMusicMusicObj:musicObj musicPlayView:self];
 }
 
 /*
