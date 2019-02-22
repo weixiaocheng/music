@@ -11,7 +11,7 @@
 @interface CrlView ()<UITableViewDelegate, UITableViewDataSource>
 @property (nonatomic, strong) UIButton *backBtn;
 @property (nonatomic, strong) UIButton *changeBtn;
-@property (nonatomic, strong) UIView *backview;
+@property (nonatomic, strong) UIImageView *backview;
 @property (nonatomic, strong) UITableView *tableView;
 @end
 
@@ -26,9 +26,21 @@
     return self;
 }
 
+- (void)setImageName:(NSString *)imageName
+{
+    _imageName = imageName;
+    self.backview.image = [UIImage imageNamed:imageName];
+}
 
 - (void)setUpUI
 {
+    self.backview = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@""]];
+    self.backview.contentMode = UIViewContentModeScaleAspectFill;
+    self.backBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+    self.changeBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+    
+    [self.backBtn setImage:[UIImage imageNamed:@"quit"] forState:UIControlStateNormal];
+    [self.changeBtn setImage:[UIImage imageNamed:@"lyric_normal"] forState:UIControlStateNormal];
     [self addSubview:self.backview];
     [self addSubview:self.tableView];
     [self addSubview:self.backBtn];
@@ -49,7 +61,7 @@
         make.height.offset(48);
     }];
     
-    [self.backBtn mas_makeConstraints:^(MASConstraintMaker *make) {
+    [self.changeBtn mas_makeConstraints:^(MASConstraintMaker *make) {
         make.right.equalTo(weakSelf).offset(-10);
         make.top.equalTo(weakSelf).offset(Height_NavBar);
         make.width.offset(42);

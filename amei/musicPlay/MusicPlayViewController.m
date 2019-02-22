@@ -37,6 +37,7 @@
 {
     _musicObj = musicObj;
     [self.musicManager playMusicMusicObj:musicObj musicPlayView:self];
+    self.crlView.imageName = musicObj.icon;
 }
 
 

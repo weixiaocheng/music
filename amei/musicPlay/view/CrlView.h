@@ -11,6 +11,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface CrlView : UIView
+@property (nonatomic, copy) NSString *imageName;
 @property (nonatomic, strong) NSArray *datasoure;
 @end
 
