@@ -7,9 +7,10 @@
 //
 
 #import "MusicListViewController.h"
-
-@interface MusicListViewController ()
+#import "MusicListManager.h"
+@interface MusicListViewController ()<UITableViewDelegate, UITableViewDataSource>
 @property (nonatomic, strong) UITableView *tableView;
+@property (nonatomic, strong) MusicListManager *manager;
 @end
 
 @implementation MusicListViewController
@@ -18,24 +19,62 @@
     [super viewDidLoad];
     self.title = @"音乐列表";
     // Do any additional setup after loading the view.
+    [self.view addSubview:self.tableView];
+    [self.tableView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.right.top.equalTo(self.view);
+        make.bottom.equalTo(self.view.mas_bottom).offset(-Height_BottomSafe);
+    }];
+}
+
+- (MusicListManager *)manager
+{
+    if (!_manager) {
+        _manager = [MusicListManager shareInstance];
+    }
+    return _manager;
 }
 
 - (UITableView *)tableView
 {
     if (!_tableView) {
         _tableView = [[UITableView alloc] initWithFrame:self.view.bounds];
+        _tableView.delegate = self;
+        _tableView.dataSource = self;
+        _tableView.backgroundColor = [UIColor whiteColor];
     }
     return _tableView;
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
+{
+    return 1;
 }
-*/
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    return self.manager.musicList.count;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"idCell"];
+    if (cell == nil)
+    {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:@"idCell"];
+    }
+    MusicOBJ *obj = self.manager.musicList[indexPath.row];
+    cell.textLabel.text = obj.name;
+    cell.imageView.image = [UIImage imageNamed:obj.singerIcon];
+    cell.detailTextLabel.text = obj.singer;
+    return cell;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    UITableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
+    [cell setSelected:false animated:true];
+    MusicOBJ *obj = self.manager.musicList[indexPath.row];
+    NSLog(@"\n选中的歌曲是 : %@\n", obj.name);
+}
 
 @end

@@ -14,6 +14,49 @@
 		18134A0A221F8210003FEBA3 /* ameiTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 18134A09221F8210003FEBA3 /* ameiTests.m */; };
 		18134A15221F8210003FEBA3 /* ameiUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 18134A14221F8210003FEBA3 /* ameiUITests.m */; };
 		18134A27221F8441003FEBA3 /* MusicListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18134A26221F8441003FEBA3 /* MusicListViewController.m */; };
+		18134A2A221F868D003FEBA3 /* MusicListManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 18134A29221F868D003FEBA3 /* MusicListManager.m */; };
+		18134A56221F9051003FEBA3 /* 255319.lrc in Resources */ = {isa = PBXBuildFile; fileRef = 18134A2F221F9051003FEBA3 /* 255319.lrc */; };
+		18134A57221F9051003FEBA3 /* 14945107.lrc in Resources */ = {isa = PBXBuildFile; fileRef = 18134A30221F9051003FEBA3 /* 14945107.lrc */; };
+		18134A58221F9051003FEBA3 /* 10736444.lrc in Resources */ = {isa = PBXBuildFile; fileRef = 18134A31221F9051003FEBA3 /* 10736444.lrc */; };
+		18134A59221F9051003FEBA3 /* 309769.lrc in Resources */ = {isa = PBXBuildFile; fileRef = 18134A32221F9051003FEBA3 /* 309769.lrc */; };
+		18134A5A221F9051003FEBA3 /* 235319.lrc in Resources */ = {isa = PBXBuildFile; fileRef = 18134A33221F9051003FEBA3 /* 235319.lrc */; };
+		18134A5B221F9051003FEBA3 /* 12309111.lrc in Resources */ = {isa = PBXBuildFile; fileRef = 18134A34221F9051003FEBA3 /* 12309111.lrc */; };
+		18134A5C221F9051003FEBA3 /* 339744.lrc in Resources */ = {isa = PBXBuildFile; fileRef = 18134A35221F9051003FEBA3 /* 339744.lrc */; };
+		18134A5D221F9051003FEBA3 /* 10405520.lrc in Resources */ = {isa = PBXBuildFile; fileRef = 18134A36221F9051003FEBA3 /* 10405520.lrc */; };
+		18134A5E221F9051003FEBA3 /* 120125029.lrc in Resources */ = {isa = PBXBuildFile; fileRef = 18134A37221F9051003FEBA3 /* 120125029.lrc */; };
+		18134A5F221F9051003FEBA3 /* wf@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 18134A39221F9051003FEBA3 /* wf@2x.jpg */; };
+		18134A60221F9051003FEBA3 /* jay@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 18134A3A221F9051003FEBA3 /* jay@2x.jpg */; };
+		18134A61221F9051003FEBA3 /* jay_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 18134A3B221F9051003FEBA3 /* jay_icon@2x.png */; };
+		18134A62221F9051003FEBA3 /* dzq_icon@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 18134A3C221F9051003FEBA3 /* dzq_icon@2x.jpg */; };
+		18134A63221F9051003FEBA3 /* zxy@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 18134A3D221F9051003FEBA3 /* zxy@2x.jpg */; };
+		18134A64221F9051003FEBA3 /* kzxd_icon@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 18134A3E221F9051003FEBA3 /* kzxd_icon@2x.jpg */; };
+		18134A65221F9051003FEBA3 /* dzq@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 18134A3F221F9051003FEBA3 /* dzq@2x.jpg */; };
+		18134A66221F9051003FEBA3 /* jj@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 18134A40221F9051003FEBA3 /* jj@2x.jpg */; };
+		18134A67221F9051003FEBA3 /* wf_icon@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 18134A41221F9051003FEBA3 /* wf_icon@2x.jpg */; };
+		18134A68221F9051003FEBA3 /* eason_icon@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 18134A42221F9051003FEBA3 /* eason_icon@2x.jpg */; };
+		18134A69221F9051003FEBA3 /* kzxd@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 18134A43221F9051003FEBA3 /* kzxd@2x.jpg */; };
+		18134A6A221F9051003FEBA3 /* bb@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 18134A44221F9051003FEBA3 /* bb@2x.jpg */; };
+		18134A6B221F9051003FEBA3 /* eason@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 18134A45221F9051003FEBA3 /* eason@2x.jpg */; };
+		18134A6C221F9051003FEBA3 /* jj_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 18134A46221F9051003FEBA3 /* jj_icon@2x.png */; };
+		18134A6D221F9051003FEBA3 /* nanquan@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 18134A47221F9051003FEBA3 /* nanquan@2x.jpg */; };
+		18134A6E221F9051003FEBA3 /* bb_icon@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 18134A48221F9051003FEBA3 /* bb_icon@2x.jpg */; };
+		18134A6F221F9051003FEBA3 /* zxy_icon@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 18134A49221F9051003FEBA3 /* zxy_icon@2x.jpg */; };
+		18134A70221F9051003FEBA3 /* nanquan_icon@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 18134A4A221F9051003FEBA3 /* nanquan_icon@2x.jpg */; };
+		18134A71221F9051003FEBA3 /* 14945107.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 18134A4C221F9051003FEBA3 /* 14945107.mp3 */; };
+		18134A72221F9051003FEBA3 /* 255319.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 18134A4D221F9051003FEBA3 /* 255319.mp3 */; };
+		18134A73221F9051003FEBA3 /* 235319.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 18134A4E221F9051003FEBA3 /* 235319.mp3 */; };
+		18134A74221F9051003FEBA3 /* 309769.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 18134A4F221F9051003FEBA3 /* 309769.mp3 */; };
+		18134A75221F9051003FEBA3 /* 10736444.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 18134A50221F9051003FEBA3 /* 10736444.mp3 */; };
+		18134A76221F9051003FEBA3 /* 10405520.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 18134A51221F9051003FEBA3 /* 10405520.mp3 */; };
+		18134A77221F9051003FEBA3 /* 120125029.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 18134A52221F9051003FEBA3 /* 120125029.mp3 */; };
+		18134A78221F9051003FEBA3 /* 12309111.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 18134A53221F9051003FEBA3 /* 12309111.mp3 */; };
+		18134A79221F9051003FEBA3 /* 339744.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 18134A54221F9051003FEBA3 /* 339744.mp3 */; };
+		18134A7A221F9051003FEBA3 /* Musics.plist in Resources */ = {isa = PBXBuildFile; fileRef = 18134A55221F9051003FEBA3 /* Musics.plist */; };
+		18134A7D221F90B0003FEBA3 /* MusicOBJ.m in Sources */ = {isa = PBXBuildFile; fileRef = 18134A7C221F90B0003FEBA3 /* MusicOBJ.m */; };
+		18134A80221F917D003FEBA3 /* CommonMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = 18134A7E221F917D003FEBA3 /* CommonMethod.m */; };
+		9CA4B18B4E6989F952046D1C /* libPods-ameiUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 805D0E9F53789E24DC6C23FE /* libPods-ameiUITests.a */; };
+		BCC711D5110CD128B8A971C4 /* libPods-amei.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 251D0C17F4CC835AB764A302 /* libPods-amei.a */; };
+		E5634E7FD92F294A148BA601 /* libPods-ameiTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A89FEF63A06B3C0A80F55023 /* libPods-ameiTests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +77,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		142974B77B6CF73FF7758B4F /* Pods-ameiTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ameiTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ameiTests/Pods-ameiTests.release.xcconfig"; sourceTree = "<group>"; };
 		181349ED221F820F003FEBA3 /* amei.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = amei.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		181349F0221F820F003FEBA3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		181349F1221F820F003FEBA3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -49,6 +93,59 @@
 		18134A16221F8210003FEBA3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		18134A25221F8441003FEBA3 /* MusicListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MusicListViewController.h; sourceTree = "<group>"; };
 		18134A26221F8441003FEBA3 /* MusicListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MusicListViewController.m; sourceTree = "<group>"; };
+		18134A28221F868D003FEBA3 /* MusicListManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MusicListManager.h; sourceTree = "<group>"; };
+		18134A29221F868D003FEBA3 /* MusicListManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MusicListManager.m; sourceTree = "<group>"; };
+		18134A2B221F8A00003FEBA3 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		18134A2C221F8B39003FEBA3 /* config.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = config.h; sourceTree = "<group>"; };
+		18134A2F221F9051003FEBA3 /* 255319.lrc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 255319.lrc; sourceTree = "<group>"; };
+		18134A30221F9051003FEBA3 /* 14945107.lrc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 14945107.lrc; sourceTree = "<group>"; };
+		18134A31221F9051003FEBA3 /* 10736444.lrc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 10736444.lrc; sourceTree = "<group>"; };
+		18134A32221F9051003FEBA3 /* 309769.lrc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 309769.lrc; sourceTree = "<group>"; };
+		18134A33221F9051003FEBA3 /* 235319.lrc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 235319.lrc; sourceTree = "<group>"; };
+		18134A34221F9051003FEBA3 /* 12309111.lrc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 12309111.lrc; sourceTree = "<group>"; };
+		18134A35221F9051003FEBA3 /* 339744.lrc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 339744.lrc; sourceTree = "<group>"; };
+		18134A36221F9051003FEBA3 /* 10405520.lrc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 10405520.lrc; sourceTree = "<group>"; };
+		18134A37221F9051003FEBA3 /* 120125029.lrc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 120125029.lrc; sourceTree = "<group>"; };
+		18134A39221F9051003FEBA3 /* wf@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "wf@2x.jpg"; sourceTree = "<group>"; };
+		18134A3A221F9051003FEBA3 /* jay@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "jay@2x.jpg"; sourceTree = "<group>"; };
+		18134A3B221F9051003FEBA3 /* jay_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "jay_icon@2x.png"; sourceTree = "<group>"; };
+		18134A3C221F9051003FEBA3 /* dzq_icon@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "dzq_icon@2x.jpg"; sourceTree = "<group>"; };
+		18134A3D221F9051003FEBA3 /* zxy@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "zxy@2x.jpg"; sourceTree = "<group>"; };
+		18134A3E221F9051003FEBA3 /* kzxd_icon@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "kzxd_icon@2x.jpg"; sourceTree = "<group>"; };
+		18134A3F221F9051003FEBA3 /* dzq@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "dzq@2x.jpg"; sourceTree = "<group>"; };
+		18134A40221F9051003FEBA3 /* jj@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "jj@2x.jpg"; sourceTree = "<group>"; };
+		18134A41221F9051003FEBA3 /* wf_icon@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "wf_icon@2x.jpg"; sourceTree = "<group>"; };
+		18134A42221F9051003FEBA3 /* eason_icon@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "eason_icon@2x.jpg"; sourceTree = "<group>"; };
+		18134A43221F9051003FEBA3 /* kzxd@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "kzxd@2x.jpg"; sourceTree = "<group>"; };
+		18134A44221F9051003FEBA3 /* bb@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "bb@2x.jpg"; sourceTree = "<group>"; };
+		18134A45221F9051003FEBA3 /* eason@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "eason@2x.jpg"; sourceTree = "<group>"; };
+		18134A46221F9051003FEBA3 /* jj_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "jj_icon@2x.png"; sourceTree = "<group>"; };
+		18134A47221F9051003FEBA3 /* nanquan@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "nanquan@2x.jpg"; sourceTree = "<group>"; };
+		18134A48221F9051003FEBA3 /* bb_icon@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "bb_icon@2x.jpg"; sourceTree = "<group>"; };
+		18134A49221F9051003FEBA3 /* zxy_icon@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "zxy_icon@2x.jpg"; sourceTree = "<group>"; };
+		18134A4A221F9051003FEBA3 /* nanquan_icon@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "nanquan_icon@2x.jpg"; sourceTree = "<group>"; };
+		18134A4C221F9051003FEBA3 /* 14945107.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 14945107.mp3; sourceTree = "<group>"; };
+		18134A4D221F9051003FEBA3 /* 255319.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 255319.mp3; sourceTree = "<group>"; };
+		18134A4E221F9051003FEBA3 /* 235319.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 235319.mp3; sourceTree = "<group>"; };
+		18134A4F221F9051003FEBA3 /* 309769.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 309769.mp3; sourceTree = "<group>"; };
+		18134A50221F9051003FEBA3 /* 10736444.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 10736444.mp3; sourceTree = "<group>"; };
+		18134A51221F9051003FEBA3 /* 10405520.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 10405520.mp3; sourceTree = "<group>"; };
+		18134A52221F9051003FEBA3 /* 120125029.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 120125029.mp3; sourceTree = "<group>"; };
+		18134A53221F9051003FEBA3 /* 12309111.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 12309111.mp3; sourceTree = "<group>"; };
+		18134A54221F9051003FEBA3 /* 339744.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 339744.mp3; sourceTree = "<group>"; };
+		18134A55221F9051003FEBA3 /* Musics.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Musics.plist; sourceTree = "<group>"; };
+		18134A7B221F90B0003FEBA3 /* MusicOBJ.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MusicOBJ.h; sourceTree = "<group>"; };
+		18134A7C221F90B0003FEBA3 /* MusicOBJ.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MusicOBJ.m; sourceTree = "<group>"; };
+		18134A7E221F917D003FEBA3 /* CommonMethod.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommonMethod.m; sourceTree = "<group>"; };
+		18134A7F221F917D003FEBA3 /* CommonMethod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonMethod.h; sourceTree = "<group>"; };
+		251D0C17F4CC835AB764A302 /* libPods-amei.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-amei.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		51A0C85C42A2FA63263DFB54 /* Pods-amei.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-amei.debug.xcconfig"; path = "Pods/Target Support Files/Pods-amei/Pods-amei.debug.xcconfig"; sourceTree = "<group>"; };
+		61BE969D7368851D8B2169D9 /* Pods-ameiTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ameiTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ameiTests/Pods-ameiTests.debug.xcconfig"; sourceTree = "<group>"; };
+		6A89D06C8E7D16194446E612 /* Pods-amei.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-amei.release.xcconfig"; path = "Pods/Target Support Files/Pods-amei/Pods-amei.release.xcconfig"; sourceTree = "<group>"; };
+		6D4B781250027163DDD89EF6 /* Pods-ameiUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ameiUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ameiUITests/Pods-ameiUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		7750253F8F8ADB09FA94958A /* Pods-ameiUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ameiUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ameiUITests/Pods-ameiUITests.release.xcconfig"; sourceTree = "<group>"; };
+		805D0E9F53789E24DC6C23FE /* libPods-ameiUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ameiUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A89FEF63A06B3C0A80F55023 /* libPods-ameiTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ameiTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +153,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BCC711D5110CD128B8A971C4 /* libPods-amei.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +161,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E5634E7FD92F294A148BA601 /* libPods-ameiTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +169,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9CA4B18B4E6989F952046D1C /* libPods-ameiUITests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0C134B89F7879639C765EB21 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				51A0C85C42A2FA63263DFB54 /* Pods-amei.debug.xcconfig */,
+				6A89D06C8E7D16194446E612 /* Pods-amei.release.xcconfig */,
+				61BE969D7368851D8B2169D9 /* Pods-ameiTests.debug.xcconfig */,
+				142974B77B6CF73FF7758B4F /* Pods-ameiTests.release.xcconfig */,
+				6D4B781250027163DDD89EF6 /* Pods-ameiUITests.debug.xcconfig */,
+				7750253F8F8ADB09FA94958A /* Pods-ameiUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		181349E4221F820F003FEBA3 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +196,8 @@
 				18134A08221F8210003FEBA3 /* ameiTests */,
 				18134A13221F8210003FEBA3 /* ameiUITests */,
 				181349EE221F820F003FEBA3 /* Products */,
+				0C134B89F7879639C765EB21 /* Pods */,
+				ADB3897D055E40E6143F1A02 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -108,6 +223,9 @@
 				181349FB221F8210003FEBA3 /* LaunchScreen.storyboard */,
 				181349FE221F8210003FEBA3 /* Info.plist */,
 				181349FF221F8210003FEBA3 /* main.m */,
+				18134A2B221F8A00003FEBA3 /* PrefixHeader.pch */,
+				18134A2C221F8B39003FEBA3 /* config.h */,
+				18134A2D221F9051003FEBA3 /* Resources */,
 			);
 			path = amei;
 			sourceTree = "<group>";
@@ -142,6 +260,10 @@
 			children = (
 				18134A25221F8441003FEBA3 /* MusicListViewController.h */,
 				18134A26221F8441003FEBA3 /* MusicListViewController.m */,
+				18134A28221F868D003FEBA3 /* MusicListManager.h */,
+				18134A29221F868D003FEBA3 /* MusicListManager.m */,
+				18134A7B221F90B0003FEBA3 /* MusicOBJ.h */,
+				18134A7C221F90B0003FEBA3 /* MusicOBJ.m */,
 			);
 			path = musicList;
 			sourceTree = "<group>";
@@ -149,8 +271,88 @@
 		18134A24221F824B003FEBA3 /* musicTools */ = {
 			isa = PBXGroup;
 			children = (
+				18134A7F221F917D003FEBA3 /* CommonMethod.h */,
+				18134A7E221F917D003FEBA3 /* CommonMethod.m */,
 			);
 			path = musicTools;
+			sourceTree = "<group>";
+		};
+		18134A2D221F9051003FEBA3 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				18134A2E221F9051003FEBA3 /* Lrcs */,
+				18134A38221F9051003FEBA3 /* Images */,
+				18134A4B221F9051003FEBA3 /* MP3s */,
+				18134A55221F9051003FEBA3 /* Musics.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		18134A2E221F9051003FEBA3 /* Lrcs */ = {
+			isa = PBXGroup;
+			children = (
+				18134A2F221F9051003FEBA3 /* 255319.lrc */,
+				18134A30221F9051003FEBA3 /* 14945107.lrc */,
+				18134A31221F9051003FEBA3 /* 10736444.lrc */,
+				18134A32221F9051003FEBA3 /* 309769.lrc */,
+				18134A33221F9051003FEBA3 /* 235319.lrc */,
+				18134A34221F9051003FEBA3 /* 12309111.lrc */,
+				18134A35221F9051003FEBA3 /* 339744.lrc */,
+				18134A36221F9051003FEBA3 /* 10405520.lrc */,
+				18134A37221F9051003FEBA3 /* 120125029.lrc */,
+			);
+			path = Lrcs;
+			sourceTree = "<group>";
+		};
+		18134A38221F9051003FEBA3 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				18134A39221F9051003FEBA3 /* wf@2x.jpg */,
+				18134A3A221F9051003FEBA3 /* jay@2x.jpg */,
+				18134A3B221F9051003FEBA3 /* jay_icon@2x.png */,
+				18134A3C221F9051003FEBA3 /* dzq_icon@2x.jpg */,
+				18134A3D221F9051003FEBA3 /* zxy@2x.jpg */,
+				18134A3E221F9051003FEBA3 /* kzxd_icon@2x.jpg */,
+				18134A3F221F9051003FEBA3 /* dzq@2x.jpg */,
+				18134A40221F9051003FEBA3 /* jj@2x.jpg */,
+				18134A41221F9051003FEBA3 /* wf_icon@2x.jpg */,
+				18134A42221F9051003FEBA3 /* eason_icon@2x.jpg */,
+				18134A43221F9051003FEBA3 /* kzxd@2x.jpg */,
+				18134A44221F9051003FEBA3 /* bb@2x.jpg */,
+				18134A45221F9051003FEBA3 /* eason@2x.jpg */,
+				18134A46221F9051003FEBA3 /* jj_icon@2x.png */,
+				18134A47221F9051003FEBA3 /* nanquan@2x.jpg */,
+				18134A48221F9051003FEBA3 /* bb_icon@2x.jpg */,
+				18134A49221F9051003FEBA3 /* zxy_icon@2x.jpg */,
+				18134A4A221F9051003FEBA3 /* nanquan_icon@2x.jpg */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		18134A4B221F9051003FEBA3 /* MP3s */ = {
+			isa = PBXGroup;
+			children = (
+				18134A4C221F9051003FEBA3 /* 14945107.mp3 */,
+				18134A4D221F9051003FEBA3 /* 255319.mp3 */,
+				18134A4E221F9051003FEBA3 /* 235319.mp3 */,
+				18134A4F221F9051003FEBA3 /* 309769.mp3 */,
+				18134A50221F9051003FEBA3 /* 10736444.mp3 */,
+				18134A51221F9051003FEBA3 /* 10405520.mp3 */,
+				18134A52221F9051003FEBA3 /* 120125029.mp3 */,
+				18134A53221F9051003FEBA3 /* 12309111.mp3 */,
+				18134A54221F9051003FEBA3 /* 339744.mp3 */,
+			);
+			path = MP3s;
+			sourceTree = "<group>";
+		};
+		ADB3897D055E40E6143F1A02 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				251D0C17F4CC835AB764A302 /* libPods-amei.a */,
+				A89FEF63A06B3C0A80F55023 /* libPods-ameiTests.a */,
+				805D0E9F53789E24DC6C23FE /* libPods-ameiUITests.a */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -160,6 +362,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 18134A19221F8210003FEBA3 /* Build configuration list for PBXNativeTarget "amei" */;
 			buildPhases = (
+				04D7D73FE64729C83414E00C /* [CP] Check Pods Manifest.lock */,
 				181349E9221F820F003FEBA3 /* Sources */,
 				181349EA221F820F003FEBA3 /* Frameworks */,
 				181349EB221F820F003FEBA3 /* Resources */,
@@ -177,6 +380,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 18134A1C221F8210003FEBA3 /* Build configuration list for PBXNativeTarget "ameiTests" */;
 			buildPhases = (
+				A6B96FBAD06D68854A8F4590 /* [CP] Check Pods Manifest.lock */,
 				18134A01221F8210003FEBA3 /* Sources */,
 				18134A02221F8210003FEBA3 /* Frameworks */,
 				18134A03221F8210003FEBA3 /* Resources */,
@@ -195,6 +399,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 18134A1F221F8210003FEBA3 /* Build configuration list for PBXNativeTarget "ameiUITests" */;
 			buildPhases = (
+				D5848D0916293EE131D6A187 /* [CP] Check Pods Manifest.lock */,
 				18134A0C221F8210003FEBA3 /* Sources */,
 				18134A0D221F8210003FEBA3 /* Frameworks */,
 				18134A0E221F8210003FEBA3 /* Resources */,
@@ -256,8 +461,45 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18134A58221F9051003FEBA3 /* 10736444.lrc in Resources */,
+				18134A72221F9051003FEBA3 /* 255319.mp3 in Resources */,
+				18134A6E221F9051003FEBA3 /* bb_icon@2x.jpg in Resources */,
+				18134A62221F9051003FEBA3 /* dzq_icon@2x.jpg in Resources */,
+				18134A56221F9051003FEBA3 /* 255319.lrc in Resources */,
+				18134A6B221F9051003FEBA3 /* eason@2x.jpg in Resources */,
+				18134A5A221F9051003FEBA3 /* 235319.lrc in Resources */,
 				181349FD221F8210003FEBA3 /* LaunchScreen.storyboard in Resources */,
+				18134A59221F9051003FEBA3 /* 309769.lrc in Resources */,
+				18134A77221F9051003FEBA3 /* 120125029.mp3 in Resources */,
+				18134A7A221F9051003FEBA3 /* Musics.plist in Resources */,
+				18134A68221F9051003FEBA3 /* eason_icon@2x.jpg in Resources */,
+				18134A5C221F9051003FEBA3 /* 339744.lrc in Resources */,
+				18134A6C221F9051003FEBA3 /* jj_icon@2x.png in Resources */,
+				18134A60221F9051003FEBA3 /* jay@2x.jpg in Resources */,
+				18134A70221F9051003FEBA3 /* nanquan_icon@2x.jpg in Resources */,
+				18134A69221F9051003FEBA3 /* kzxd@2x.jpg in Resources */,
+				18134A64221F9051003FEBA3 /* kzxd_icon@2x.jpg in Resources */,
+				18134A6D221F9051003FEBA3 /* nanquan@2x.jpg in Resources */,
+				18134A5B221F9051003FEBA3 /* 12309111.lrc in Resources */,
+				18134A66221F9051003FEBA3 /* jj@2x.jpg in Resources */,
+				18134A57221F9051003FEBA3 /* 14945107.lrc in Resources */,
+				18134A67221F9051003FEBA3 /* wf_icon@2x.jpg in Resources */,
+				18134A79221F9051003FEBA3 /* 339744.mp3 in Resources */,
+				18134A6F221F9051003FEBA3 /* zxy_icon@2x.jpg in Resources */,
+				18134A6A221F9051003FEBA3 /* bb@2x.jpg in Resources */,
+				18134A5E221F9051003FEBA3 /* 120125029.lrc in Resources */,
+				18134A78221F9051003FEBA3 /* 12309111.mp3 in Resources */,
+				18134A71221F9051003FEBA3 /* 14945107.mp3 in Resources */,
+				18134A5D221F9051003FEBA3 /* 10405520.lrc in Resources */,
 				181349FA221F8210003FEBA3 /* Assets.xcassets in Resources */,
+				18134A76221F9051003FEBA3 /* 10405520.mp3 in Resources */,
+				18134A65221F9051003FEBA3 /* dzq@2x.jpg in Resources */,
+				18134A61221F9051003FEBA3 /* jay_icon@2x.png in Resources */,
+				18134A63221F9051003FEBA3 /* zxy@2x.jpg in Resources */,
+				18134A74221F9051003FEBA3 /* 309769.mp3 in Resources */,
+				18134A75221F9051003FEBA3 /* 10736444.mp3 in Resources */,
+				18134A5F221F9051003FEBA3 /* wf@2x.jpg in Resources */,
+				18134A73221F9051003FEBA3 /* 235319.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -277,12 +519,84 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		04D7D73FE64729C83414E00C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-amei-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A6B96FBAD06D68854A8F4590 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ameiTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D5848D0916293EE131D6A187 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ameiUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		181349E9221F820F003FEBA3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				18134A00221F8210003FEBA3 /* main.m in Sources */,
+				18134A2A221F868D003FEBA3 /* MusicListManager.m in Sources */,
+				18134A7D221F90B0003FEBA3 /* MusicOBJ.m in Sources */,
+				18134A80221F917D003FEBA3 /* CommonMethod.m in Sources */,
 				181349F2221F820F003FEBA3 /* AppDelegate.m in Sources */,
 				18134A27221F8441003FEBA3 /* MusicListViewController.m in Sources */,
 			);
@@ -445,10 +759,12 @@
 		};
 		18134A1A221F8210003FEBA3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 51A0C85C42A2FA63263DFB54 /* Pods-amei.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 56L859Z482;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/amei/PrefixHeader.pch";
 				INFOPLIST_FILE = amei/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -463,10 +779,12 @@
 		};
 		18134A1B221F8210003FEBA3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6A89D06C8E7D16194446E612 /* Pods-amei.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 56L859Z482;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/amei/PrefixHeader.pch";
 				INFOPLIST_FILE = amei/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -481,6 +799,7 @@
 		};
 		18134A1D221F8210003FEBA3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 61BE969D7368851D8B2169D9 /* Pods-ameiTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -500,6 +819,7 @@
 		};
 		18134A1E221F8210003FEBA3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 142974B77B6CF73FF7758B4F /* Pods-ameiTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -519,6 +839,7 @@
 		};
 		18134A20221F8210003FEBA3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6D4B781250027163DDD89EF6 /* Pods-ameiUITests.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 56L859Z482;
@@ -537,6 +858,7 @@
 		};
 		18134A21221F8210003FEBA3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7750253F8F8ADB09FA94958A /* Pods-ameiUITests.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 56L859Z482;
