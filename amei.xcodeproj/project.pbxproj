@@ -56,6 +56,10 @@
 		18134A80221F917D003FEBA3 /* CommonMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = 18134A7E221F917D003FEBA3 /* CommonMethod.m */; };
 		18134A83221F97D6003FEBA3 /* MusicManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 18134A82221F97D6003FEBA3 /* MusicManager.m */; };
 		18134A86221F9B46003FEBA3 /* MusicPlayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18134A85221F9B46003FEBA3 /* MusicPlayViewController.m */; };
+		18134A89221FA7BC003FEBA3 /* BottomView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18134A88221FA7BC003FEBA3 /* BottomView.m */; };
+		18134A8D221FA821003FEBA3 /* CrlView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18134A8C221FA821003FEBA3 /* CrlView.m */; };
+		18134A90221FA840003FEBA3 /* ShowView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18134A8F221FA840003FEBA3 /* ShowView.m */; };
+		18134A94221FCAF7003FEBA3 /* MusicPlayManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 18134A93221FCAF7003FEBA3 /* MusicPlayManager.m */; };
 		9CA4B18B4E6989F952046D1C /* libPods-ameiUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 805D0E9F53789E24DC6C23FE /* libPods-ameiUITests.a */; };
 		BCC711D5110CD128B8A971C4 /* libPods-amei.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 251D0C17F4CC835AB764A302 /* libPods-amei.a */; };
 		E5634E7FD92F294A148BA601 /* libPods-ameiTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A89FEF63A06B3C0A80F55023 /* libPods-ameiTests.a */; };
@@ -144,6 +148,14 @@
 		18134A82221F97D6003FEBA3 /* MusicManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MusicManager.m; sourceTree = "<group>"; };
 		18134A84221F9B46003FEBA3 /* MusicPlayViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MusicPlayViewController.h; sourceTree = "<group>"; };
 		18134A85221F9B46003FEBA3 /* MusicPlayViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MusicPlayViewController.m; sourceTree = "<group>"; };
+		18134A87221FA7BC003FEBA3 /* BottomView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BottomView.h; sourceTree = "<group>"; };
+		18134A88221FA7BC003FEBA3 /* BottomView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BottomView.m; sourceTree = "<group>"; };
+		18134A8B221FA821003FEBA3 /* CrlView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CrlView.h; sourceTree = "<group>"; };
+		18134A8C221FA821003FEBA3 /* CrlView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CrlView.m; sourceTree = "<group>"; };
+		18134A8E221FA840003FEBA3 /* ShowView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShowView.h; sourceTree = "<group>"; };
+		18134A8F221FA840003FEBA3 /* ShowView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShowView.m; sourceTree = "<group>"; };
+		18134A92221FCAF7003FEBA3 /* MusicPlayManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MusicPlayManager.h; sourceTree = "<group>"; };
+		18134A93221FCAF7003FEBA3 /* MusicPlayManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MusicPlayManager.m; sourceTree = "<group>"; };
 		251D0C17F4CC835AB764A302 /* libPods-amei.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-amei.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		51A0C85C42A2FA63263DFB54 /* Pods-amei.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-amei.debug.xcconfig"; path = "Pods/Target Support Files/Pods-amei/Pods-amei.debug.xcconfig"; sourceTree = "<group>"; };
 		61BE969D7368851D8B2169D9 /* Pods-ameiTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ameiTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ameiTests/Pods-ameiTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -257,6 +269,8 @@
 		18134A22221F8239003FEBA3 /* musicPlay */ = {
 			isa = PBXGroup;
 			children = (
+				18134A91221FCADF003FEBA3 /* model */,
+				18134A8A221FA7C1003FEBA3 /* view */,
 				18134A84221F9B46003FEBA3 /* MusicPlayViewController.h */,
 				18134A85221F9B46003FEBA3 /* MusicPlayViewController.m */,
 			);
@@ -353,6 +367,28 @@
 				18134A54221F9051003FEBA3 /* 339744.mp3 */,
 			);
 			path = MP3s;
+			sourceTree = "<group>";
+		};
+		18134A8A221FA7C1003FEBA3 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				18134A87221FA7BC003FEBA3 /* BottomView.h */,
+				18134A88221FA7BC003FEBA3 /* BottomView.m */,
+				18134A8B221FA821003FEBA3 /* CrlView.h */,
+				18134A8C221FA821003FEBA3 /* CrlView.m */,
+				18134A8E221FA840003FEBA3 /* ShowView.h */,
+				18134A8F221FA840003FEBA3 /* ShowView.m */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		18134A91221FCADF003FEBA3 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				18134A92221FCAF7003FEBA3 /* MusicPlayManager.h */,
+				18134A93221FCAF7003FEBA3 /* MusicPlayManager.m */,
+			);
+			path = model;
 			sourceTree = "<group>";
 		};
 		ADB3897D055E40E6143F1A02 /* Frameworks */ = {
@@ -603,14 +639,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18134A90221FA840003FEBA3 /* ShowView.m in Sources */,
+				18134A8D221FA821003FEBA3 /* CrlView.m in Sources */,
 				18134A00221F8210003FEBA3 /* main.m in Sources */,
 				18134A2A221F868D003FEBA3 /* MusicListManager.m in Sources */,
 				18134A86221F9B46003FEBA3 /* MusicPlayViewController.m in Sources */,
 				18134A7D221F90B0003FEBA3 /* MusicOBJ.m in Sources */,
 				18134A80221F917D003FEBA3 /* CommonMethod.m in Sources */,
+				18134A94221FCAF7003FEBA3 /* MusicPlayManager.m in Sources */,
 				18134A83221F97D6003FEBA3 /* MusicManager.m in Sources */,
 				181349F2221F820F003FEBA3 /* AppDelegate.m in Sources */,
 				18134A27221F8441003FEBA3 /* MusicListViewController.m in Sources */,
+				18134A89221FA7BC003FEBA3 /* BottomView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
