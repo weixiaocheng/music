@@ -35,9 +35,17 @@
 
 -(void)setMusicObj:(MusicOBJ *)musicObj
 {
+    if (_musicObj == musicObj) {
+        return;
+    }
+    if (_musicObj) {
+        [self.musicManager stopMusicPlayMusicMusicObj:_musicObj];
+    }
+   
     _musicObj = musicObj;
     [self.musicManager playMusicMusicObj:musicObj musicPlayView:self];
     self.crlView.imageName = musicObj.icon;
+    self.bottomView.isPlay = true;
 }
 
 
@@ -79,7 +87,8 @@
 
 - (void)playBottomView:(BottomView *)bottomView
 {
-    NSLog(@"点击了上一首");
+    NSLog(@"点击了 播放 暂停 ");
+    [self.musicManager pauseMusicMusicObj:self.musicObj];
 }
 
 - (void)nextBottomView:(BottomView *)bottimView
@@ -89,7 +98,7 @@
 
 - (void)previousBottomView:(BottomView *)bottomView
 {
-    NSLog(@"点击了 播放 暂停 ");
+    NSLog(@"点击了上一首");
 }
 
 

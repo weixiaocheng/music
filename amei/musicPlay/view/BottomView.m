@@ -68,6 +68,8 @@
     self.playBtn.tag = 102;
     self.nextBtn.tag = 103;
     [self.previousBtn addTarget:self action:@selector(buttonTarget:) forControlEvents:UIControlEventTouchUpInside];
+    [self.playBtn addTarget:self action:@selector(buttonTarget:) forControlEvents:UIControlEventTouchUpInside];
+    [self.nextBtn addTarget:self action:@selector(buttonTarget:) forControlEvents:UIControlEventTouchUpInside];
 }
 
 - (void)buttonTarget: (UIButton *)sender
@@ -80,17 +82,23 @@
             break;
         case 102:
             if ([self.delegate respondsToSelector:@selector(playBottomView:)]) {
-                [self.delegate previousBottomView:self];
+                [self.delegate playBottomView:self];
+                self.playBtn.selected = !self.playBtn.selected;
             }
             break;
         case 103:
             if ([self.delegate respondsToSelector:@selector(nextBottomView:)]) {
-                [self.delegate previousBottomView:self];
+                [self.delegate nextBottomView:self];
             }
             break;
         default:
             break;
     }
+}
+
+- (void)setIsPlay:(BOOL)isPlay
+{
+    [self.playBtn setSelected:isPlay];
 }
 
 @end

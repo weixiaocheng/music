@@ -36,7 +36,7 @@ NS_ASSUME_NONNULL_BEGIN
 @end
 @interface BottomView : UIView
 @property (nonatomic, weak)id<BottomViewDelegate>delegate;
-
+@property (nonatomic, assign) BOOL isPlay;
 @end
 
 NS_ASSUME_NONNULL_END

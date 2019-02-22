@@ -75,6 +75,8 @@ static MusicManager *manager = nil;
         if (play) {
             [play pause];
             musicObj.isPlay = false;
+        }else{
+            NSLog(@"正在播放中 但是播放对象缺不存在");
         }
         return;
     }
@@ -150,8 +152,11 @@ static MusicManager *manager = nil;
         NSLog(@" 没有对应的音乐播放对象 ");
         return;
     }
+    
+    play.currentTime = 0;
     [play stop];
     musicObj.isPlay = false;
+    
 }
 
 @end
