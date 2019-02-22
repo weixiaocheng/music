@@ -15,6 +15,7 @@
 @property (nonatomic, strong) BottomView *bottomView;
 @property (nonatomic, strong) ShowView *showView;
 @property (nonatomic, strong) CrlView *crlView;
+@property (nonatomic, strong) MusicListManager *listManager;
 @end
 
 @implementation MusicPlayViewController
@@ -22,6 +23,7 @@
 - (MusicManager *)musicManager{
     if (!_musicManager) {
         _musicManager = [MusicManager shareInstance];
+        _listManager = [MusicListManager shareInstance];
     }
     return _musicManager;
 }
@@ -35,6 +37,10 @@
 
 -(void)setMusicObj:(MusicOBJ *)musicObj
 {
+    if (musicObj == nil) {
+        return;
+    }
+    
     if (_musicObj == musicObj) {
         return;
     }
@@ -97,11 +103,13 @@
 - (void)nextBottomView:(BottomView *)bottimView
 {
     NSLog(@"点击了 下一首");
+    self.musicObj = [self.listManager nextMusic:self.musicObj];
 }
 
 - (void)previousBottomView:(BottomView *)bottomView
 {
     NSLog(@"点击了上一首");
+    self.musicObj = [self.listManager previousMusic:self.musicObj];
 }
 
 

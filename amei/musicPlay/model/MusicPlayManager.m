@@ -8,6 +8,7 @@
 
 #import "MusicPlayManager.h"
 static MusicPlayManager* manager;
+
 @implementation MusicPlayManager
 + (instancetype)shareInstance
 {
@@ -17,4 +18,6 @@ static MusicPlayManager* manager;
     });
     return manager;
 }
+
+
 @end

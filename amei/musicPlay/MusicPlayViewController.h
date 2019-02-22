@@ -9,11 +9,13 @@
 #import <UIKit/UIKit.h>
 #import <AVFoundation/AVFoundation.h>
 #import "../musicTools/MusicManager.h"
+#import "../musicList/MusicListManager.h"
 @class MusicManager;
 NS_ASSUME_NONNULL_BEGIN
 
 @interface MusicPlayViewController : UIViewController <AVAudioPlayerDelegate>
 @property (nonatomic, strong) MusicOBJ *musicObj;
+
 @end
 
 NS_ASSUME_NONNULL_END

@@ -56,5 +56,69 @@ static MusicListManager *manager = nil;
     return musicList;
 }
 
+#pragma mark -- 上一曲
+- (MusicOBJ *)previousMusic: (MusicOBJ *)passmusicObj
+{
+    if (self.musicList.count == 0) {
+        return passmusicObj;
+    }else if (self.musicList.count == 1)
+    {
+        return self.musicList[0];
+    }
+    
+    NSInteger index = -1;
+    for (int i = 0; i < self.musicList.count; i ++ ) {
+        MusicOBJ *musicObj = self.musicList[i];
+        if (musicObj == passmusicObj) {
+            index = i;
+            break;
+        }
+    }
+    if (index == -1) {
+        NSLog(@"见鬼了 不存在正在播放的对象");
+        if (self.musicList.count == 0) {
+            return passmusicObj;
+        }
+    }
+    if (index == 0) {
+        return self.musicList[self.musicList.count - 1];
+    }else{
+        return self.musicList[index - 1];
+    }
+    
+    return self.musicList[0];
+}
+
+- (MusicOBJ *)nextMusic: (MusicOBJ *)passmusicObj{
+    if (self.musicList.count == 0) {
+        return passmusicObj;
+    }else if (self.musicList.count == 1)
+    {
+        return self.musicList[0];
+    }
+    
+    NSInteger index = -1;
+    for (int i = 0; i < self.musicList.count; i ++ ) {
+        MusicOBJ *musicObj = self.musicList[i];
+        if (musicObj == passmusicObj) {
+            index = i;
+            break;
+        }
+    }
+    if (index == -1) {
+        NSLog(@"见鬼了 不存在正在播放的对象");
+        if (self.musicList.count == 0) {
+            return passmusicObj;
+        }
+    }
+    if (index == self.musicList.count - 1) {
+        return self.musicList[0];
+    }else{
+        return self.musicList[index + 1];
+    }
+    
+    return self.musicList[0];
+}
+
 
 @end

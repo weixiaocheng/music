@@ -14,6 +14,12 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, strong) NSArray *musicList; /**< <#备注#> */
 // 单例
 + (instancetype)shareInstance;
+
+// 获取上一曲
+- (MusicOBJ *)previousMusic: (MusicOBJ *)passmusicObj;
+
+// 获取下一曲
+- (MusicOBJ *)nextMusic: (MusicOBJ *)passmusicObj;
 @end
 
 NS_ASSUME_NONNULL_END

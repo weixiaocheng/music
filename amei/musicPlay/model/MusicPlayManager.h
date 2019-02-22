@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-
+#import "../../musicList/MusicOBJ.h"
 NS_ASSUME_NONNULL_BEGIN
 
 @interface MusicPlayManager : NSObject
