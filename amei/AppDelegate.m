@@ -14,10 +14,10 @@
 
 @implementation AppDelegate
 
-
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     self.window = [[UIWindow alloc] initWithFrame:UIScreen.mainScreen.bounds];
+    self.window.backgroundColor = [UIColor whiteColor];
     MusicListViewController *musciList = [[MusicListViewController alloc] init];
     UINavigationController *navC = [[UINavigationController alloc] initWithRootViewController:musciList];
     self.window.rootViewController = navC;

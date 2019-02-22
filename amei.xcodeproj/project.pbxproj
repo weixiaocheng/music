@@ -54,6 +54,8 @@
 		18134A7A221F9051003FEBA3 /* Musics.plist in Resources */ = {isa = PBXBuildFile; fileRef = 18134A55221F9051003FEBA3 /* Musics.plist */; };
 		18134A7D221F90B0003FEBA3 /* MusicOBJ.m in Sources */ = {isa = PBXBuildFile; fileRef = 18134A7C221F90B0003FEBA3 /* MusicOBJ.m */; };
 		18134A80221F917D003FEBA3 /* CommonMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = 18134A7E221F917D003FEBA3 /* CommonMethod.m */; };
+		18134A83221F97D6003FEBA3 /* MusicManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 18134A82221F97D6003FEBA3 /* MusicManager.m */; };
+		18134A86221F9B46003FEBA3 /* MusicPlayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18134A85221F9B46003FEBA3 /* MusicPlayViewController.m */; };
 		9CA4B18B4E6989F952046D1C /* libPods-ameiUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 805D0E9F53789E24DC6C23FE /* libPods-ameiUITests.a */; };
 		BCC711D5110CD128B8A971C4 /* libPods-amei.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 251D0C17F4CC835AB764A302 /* libPods-amei.a */; };
 		E5634E7FD92F294A148BA601 /* libPods-ameiTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A89FEF63A06B3C0A80F55023 /* libPods-ameiTests.a */; };
@@ -138,6 +140,10 @@
 		18134A7C221F90B0003FEBA3 /* MusicOBJ.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MusicOBJ.m; sourceTree = "<group>"; };
 		18134A7E221F917D003FEBA3 /* CommonMethod.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommonMethod.m; sourceTree = "<group>"; };
 		18134A7F221F917D003FEBA3 /* CommonMethod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonMethod.h; sourceTree = "<group>"; };
+		18134A81221F97D6003FEBA3 /* MusicManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MusicManager.h; sourceTree = "<group>"; };
+		18134A82221F97D6003FEBA3 /* MusicManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MusicManager.m; sourceTree = "<group>"; };
+		18134A84221F9B46003FEBA3 /* MusicPlayViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MusicPlayViewController.h; sourceTree = "<group>"; };
+		18134A85221F9B46003FEBA3 /* MusicPlayViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MusicPlayViewController.m; sourceTree = "<group>"; };
 		251D0C17F4CC835AB764A302 /* libPods-amei.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-amei.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		51A0C85C42A2FA63263DFB54 /* Pods-amei.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-amei.debug.xcconfig"; path = "Pods/Target Support Files/Pods-amei/Pods-amei.debug.xcconfig"; sourceTree = "<group>"; };
 		61BE969D7368851D8B2169D9 /* Pods-ameiTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ameiTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ameiTests/Pods-ameiTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -251,6 +257,8 @@
 		18134A22221F8239003FEBA3 /* musicPlay */ = {
 			isa = PBXGroup;
 			children = (
+				18134A84221F9B46003FEBA3 /* MusicPlayViewController.h */,
+				18134A85221F9B46003FEBA3 /* MusicPlayViewController.m */,
 			);
 			path = musicPlay;
 			sourceTree = "<group>";
@@ -273,6 +281,8 @@
 			children = (
 				18134A7F221F917D003FEBA3 /* CommonMethod.h */,
 				18134A7E221F917D003FEBA3 /* CommonMethod.m */,
+				18134A81221F97D6003FEBA3 /* MusicManager.h */,
+				18134A82221F97D6003FEBA3 /* MusicManager.m */,
 			);
 			path = musicTools;
 			sourceTree = "<group>";
@@ -595,8 +605,10 @@
 			files = (
 				18134A00221F8210003FEBA3 /* main.m in Sources */,
 				18134A2A221F868D003FEBA3 /* MusicListManager.m in Sources */,
+				18134A86221F9B46003FEBA3 /* MusicPlayViewController.m in Sources */,
 				18134A7D221F90B0003FEBA3 /* MusicOBJ.m in Sources */,
 				18134A80221F917D003FEBA3 /* CommonMethod.m in Sources */,
+				18134A83221F97D6003FEBA3 /* MusicManager.m in Sources */,
 				181349F2221F820F003FEBA3 /* AppDelegate.m in Sources */,
 				18134A27221F8441003FEBA3 /* MusicListViewController.m in Sources */,
 			);
