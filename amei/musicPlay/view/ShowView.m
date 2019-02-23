@@ -14,6 +14,8 @@
 @property (nonatomic, strong) UILabel *timeLable; /**< 显示时间 */
 @property (nonatomic, strong) UIView *progress_backView;
 @property (nonatomic, strong) YUTimer *timer_slider_runtime; /**< 关于滑块的运行时*/
+@property (nonatomic, strong) UIView *sigenView; /** < 显示歌词信息 */
+@property (nonatomic, strong) UILabel *showLable; /**< 显示歌曲信息 */
 @end
 
 @implementation ShowView
@@ -27,6 +29,13 @@
     return self;
 }
 
+- (UIView *)sigenView
+{
+    if (!_sigenView) {
+        _sigenView = [[UIView alloc] initWithFrame:CGRectZero];
+    }
+    return _sigenView;
+}
 
 - (void)setUpUI
 {
@@ -38,6 +47,13 @@
     self.progressView.backgroundColor = [CommonMethod colorWithHexColorString:@"#4876FF"];
     self.timeLable = [[UILabel alloc] initWithFrame:CGRectZero];
     self.timeLable.font = [UIFont systemFontOfSize:13];
+    self.showLable = [[UILabel alloc] initWithFrame:CGRectZero];
+    self.showLable.textColor = [UIColor whiteColor];
+    self.showLable.numberOfLines = 0;
+    self.showLable.font = [UIFont systemFontOfSize:16];
+    self.sigenView.backgroundColor = [UIColor colorWithWhite:0.5 alpha:0.5];
+    [self addSubview:self.sigenView];
+    [self addSubview:self.showLable];
     [self addSubview:self.progress_backView];
     [self addSubview:self.silderBtn];
     [self.progress_backView addSubview:self.timeLable];
@@ -69,6 +85,18 @@
     
     UIPanGestureRecognizer *pan = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(panView:)];
     [self.silderBtn addGestureRecognizer:pan];
+    
+    
+    [self.sigenView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.right.equalTo(weakSelf);
+        make.height.offset(80);
+        make.bottom.equalTo(self.progress_backView.mas_top).offset(3);
+    }];
+    [self.showLable mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.centerY.equalTo(weakSelf.sigenView.mas_centerY);
+        make.left.equalTo(weakSelf).offset(15);
+    }];
+    
 }
 
 // 搭建tap 事件
@@ -126,6 +154,11 @@
     // 首先移除 再 添加 运行时
     self.timeLable.text = [self stringWithTime: self.play.duration];
     [self addCurrentTimer];
+}
+
+- (void)setUpSiger: (NSString *)sigername name: (NSString *)name
+{
+    self.showLable.text = [NSString stringWithFormat:@"歌曲: %@ \n歌手: %@",name,sigername];
 }
 
 - (void)addCurrentTimer{

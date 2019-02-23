@@ -12,7 +12,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface ShowView : UIView
 @property (nonatomic, strong)AVAudioPlayer *play;
-
+- (void)setUpSiger: (NSString *)sigername name: (NSString *)name;
 @end
 
 NS_ASSUME_NONNULL_END

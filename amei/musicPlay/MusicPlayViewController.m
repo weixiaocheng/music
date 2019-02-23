@@ -54,6 +54,7 @@
     self.crlView.imageName = musicObj.icon;
     self.bottomView.isPlay = true;
     _musicObj.isPlay = true;
+    [self.showView setUpSiger:musicObj.singer name:musicObj.name];
 }
 
 
