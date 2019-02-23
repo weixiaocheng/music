@@ -7,7 +7,7 @@
 //
 
 #import "MusicManager.h"
-#import <AVFoundation/AVFoundation.h>
+
 #import "../musicPlay/MusicPlayViewController.h"
 @interface MusicManager ()
 @property (nonatomic, strong) NSMutableDictionary *avaudionDict;
@@ -68,7 +68,7 @@ static MusicManager *manager = nil;
  @param musicObj 传入播放对象
  @param musicVC 直接给 self
  */
-- (void)playMusicMusicObj: (MusicOBJ *)musicObj musicPlayView: (MusicPlayViewController *)musicVC
+- (AVAudioPlayer *)playMusicMusicObj: (MusicOBJ *)musicObj musicPlayView: (MusicPlayViewController *)musicVC
 {
     if (musicObj.isPlay) { // 正在播放中
         AVAudioPlayer *play = self.avaudionDict[musicObj.filename];
@@ -78,7 +78,7 @@ static MusicManager *manager = nil;
         }else{
             NSLog(@"正在播放中 但是播放对象缺不存在");
         }
-        return;
+        return play;
     }
     
     // 判断 play 是否存在
@@ -90,14 +90,14 @@ static MusicManager *manager = nil;
         // 判断路径是否存在
         if (path == nil) {
             NSLog(@"程序出错了  路径不存在 filename: %@ \n", musicObj.filename);
-            return;
+            return nil;
         }
         NSURL *fileUrl = [NSURL fileURLWithPath:path];
         NSError *error = nil;
         play = [[AVAudioPlayer alloc] initWithContentsOfURL:fileUrl error:&error];
         if (error) {
             NSLog(@"error : %@",error);
-            return;
+            return nil;
         }
         if ([play prepareToPlay]) {
             [play play];
@@ -107,7 +107,7 @@ static MusicManager *manager = nil;
     }
     musicObj.isPlay = true;
     play.delegate = musicVC;
-    
+    return play;
 }
 
 

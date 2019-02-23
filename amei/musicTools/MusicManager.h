@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-
+#import <AVFoundation/AVFoundation.h>
 #import "../musicList/MusicOBJ.h"
 @class MusicPlayViewController;
 NS_ASSUME_NONNULL_BEGIN
@@ -21,7 +21,7 @@ NS_ASSUME_NONNULL_BEGIN
  @param musicObj 传入播放对象
  @param musicVC 直接给 self
  */
-- (void)playMusicMusicObj: (MusicOBJ *)musicObj musicPlayView: (MusicPlayViewController *)musicVC;
+- (AVAudioPlayer *)playMusicMusicObj: (MusicOBJ *)musicObj musicPlayView: (MusicPlayViewController *)musicVC;
 /**
  音乐暂停 或者播放
  

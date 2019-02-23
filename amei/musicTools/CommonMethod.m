@@ -492,6 +492,23 @@
     return string;
 }
 
+//根据图片设置验证
++ (UIImage *)setImage :(NSString *)imageName  imageWithColor:(UIColor *)color
+{
+    UIImage * image = [[UIImage imageNamed:imageName] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+    UIGraphicsBeginImageContextWithOptions(image.size, NO, image.scale);
+    CGContextRef context = UIGraphicsGetCurrentContext();
+    CGContextTranslateCTM(context, 0, image.size.height);
+    CGContextScaleCTM(context, 1.0, -1.0);
+    CGContextSetBlendMode(context, kCGBlendModeNormal);
+    CGRect rect = CGRectMake(0, 0, image.size.width, image.size.height);
+    CGContextClipToMask(context, rect, image.CGImage);
+    [color setFill];
+    CGContextFillRect(context, rect);
+    UIImage*newImage = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    return newImage;
+}
 
 /* 获取对象的所有属性 */
 + (NSArray *)getAllPropertiesWithOBJClass:(Class)obj

@@ -14,4 +14,7 @@
 #import <Masonry.h>
 #import "config.h"
 #import "musicTools/CommonMethod.h"
+#import "musicTools/PYImageTools.h"
+#import "musicTools/UIView+AutoLayout.h"
+#import "musicTools/UIView+Extension.h"
 #endif /* PrefixHeader_pch */

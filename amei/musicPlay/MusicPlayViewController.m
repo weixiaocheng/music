@@ -50,7 +50,7 @@
         
     }
     _musicObj = musicObj;
-    [self.musicManager playMusicMusicObj:musicObj musicPlayView:self];
+    self.showView.play = [self.musicManager playMusicMusicObj:musicObj musicPlayView:self];
     self.crlView.imageName = musicObj.icon;
     self.bottomView.isPlay = true;
     _musicObj.isPlay = true;
@@ -112,5 +112,10 @@
     self.musicObj = [self.listManager previousMusic:self.musicObj];
 }
 
+- (void)audioPlayerDidFinishPlaying:(AVAudioPlayer *)player successfully:(BOOL)flag
+{
+    // 下一曲
+    self.musicObj = [self.listManager nextMusic:self.musicObj];
+}
 
 @end
