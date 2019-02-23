@@ -9,8 +9,8 @@
 #ifndef config_h
 #define config_h
 
-#define KSCREENWIDTH = UIScreen.main.bounds.size.width
-#define KSCREENHEIGHT = UIScreen.main.bounds.size.height
+#define KSCREENWIDTH  UIScreen.mainScreen.bounds.size.width
+#define KSCREENHEIGHT  UIScreen.mainScreen.bounds.size.height
 // 弱关系
 #define WeakSelf __weak typeof(self) weakSelf = self;
 

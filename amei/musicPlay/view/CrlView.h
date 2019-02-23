@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "../../musicList/MusicLrcOBJ.h"
 @class CrlView;
 @protocol CrlViewDelegate <NSObject>
 
@@ -19,7 +19,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface CrlView : UIView
 @property (nonatomic, copy) NSString *imageName;
-@property (nonatomic, strong) NSArray *datasoure;
+@property (nonatomic, strong) NSArray<MusicLrcOBJ*> *datasoure;
 @property (nonatomic, weak)id<CrlViewDelegate>delegate;
 @end
 

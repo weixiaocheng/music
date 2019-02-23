@@ -51,7 +51,7 @@
     }];
     
     [self.tableView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.left.right.top.bottom.equalTo(weakSelf);
+        make.top.bottom.left.right.equalTo(weakSelf);
     }];
     
     [self.backBtn mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -70,7 +70,13 @@
     
     // 添加点击事件
     [self.backBtn addTarget:self action:@selector(dismissView) forControlEvents:UIControlEventTouchUpInside];
-    
+    [self.changeBtn addTarget:self action:@selector(showOrhiddenLrc:) forControlEvents:UIControlEventTouchUpInside];
+}
+
+- (void)setDatasoure:(NSArray<MusicLrcOBJ *> *)datasoure
+{
+    _datasoure = datasoure;
+    [self.tableView reloadData];
 }
 
 - (UITableView *)tableView
@@ -83,6 +89,8 @@
         _tableView.backgroundView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"28131977_1383101943208"]];
         _tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
         _tableView.hidden = true;
+        _tableView.tableHeaderView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, KSCREENWIDTH, 80)];
+        _tableView.tableFooterView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, KSCREENWIDTH, 80)];
     }
     return _tableView;
 }
@@ -102,12 +110,16 @@
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"idCell"];
     if (cell == nil)
     {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:@"idCell"];
-        cell.textLabel.font = [UIFont systemFontOfSize:13];
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"idCell"];
+        cell.textLabel.font = [UIFont systemFontOfSize:14];
         cell.textLabel.textAlignment = NSTextAlignmentCenter;
+        cell.textLabel.textColor = [UIColor whiteColor];
         cell.backgroundColor = [UIColor clearColor];
         cell.selectionStyle = UITableViewCellSelectionStyleNone;
+        cell.textLabel.numberOfLines = 0;
     }
+    MusicLrcOBJ *lrcObj = self.datasoure[indexPath.row];
+    cell.textLabel.text = lrcObj.word;
     return cell;
 }
 
@@ -116,6 +128,12 @@
     if ([self.delegate respondsToSelector:@selector(backCrlView:)]) {
         [self.delegate backCrlView:self];
     }
+}
+
+// 显示歌词 如果没有 打开 就不进行关于歌词的进行时
+- (void)showOrhiddenLrc: (UIButton *)sender
+{
+    self.tableView.hidden = !self.tableView.hidden;
 }
 
 @end
