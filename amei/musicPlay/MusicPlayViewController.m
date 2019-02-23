@@ -59,7 +59,7 @@
     _musicObj.isPlay = true;
     [self.showView setUpSiger:musicObj.singer name:musicObj.name];
     self.crlView.datasoure = [self.listManager getLrcsWithMusicObj:musicObj];
-    [self setLockingInfoMusic:musicObj];
+    [self setLockingInfoMusic:musicObj andPlay:self.showView.play];
 }
 
 - (void)setUpView
@@ -127,12 +127,18 @@
     if  (event.type  ==  UIEventTypeRemoteControl)  {
         
         switch  (event.subtype)  {
+            case UIEventSubtypeRemoteControlPlay:
+                [self.musicManager pauseMusicMusicObj:self.musicObj];
                 
-            case UIEventSubtypeRemoteControlTogglePlayPause:
+                NSLog(@"RemoteControlEvents: play");
+                self.bottomView.isPlay = self.musicObj.isPlay;
+                break;
+            case UIEventSubtypeRemoteControlPause:
                 
                 [self.musicManager pauseMusicMusicObj:self.musicObj];
                 
                 NSLog(@"RemoteControlEvents: pause");
+                self.bottomView.isPlay = self.musicObj.isPlay;
                 
                 break;
                 
@@ -162,7 +168,7 @@
 }
 
 
-- (void)setLockingInfoMusic: (MusicOBJ *)musicObj
+- (void)setLockingInfoMusic: (MusicOBJ *)musicObj andPlay: (AVAudioPlayer *)avplay
 {
     
         NSMutableDictionary *dict = [[NSMutableDictionary alloc] init];
@@ -177,7 +183,8 @@
         
         [dict setObject:artwork forKey:MPMediaItemPropertyArtwork];
         //音乐剩余时长
-        [dict setObject:[NSNumber numberWithDouble:3.5] forKey:MPMediaItemPropertyPlaybackDuration];
+        [dict setObject:[NSNumber numberWithDouble:avplay.duration] forKey:MPMediaItemPropertyPlaybackDuration];
+        [dict setObject:[NSNumber numberWithDouble:avplay.currentTime] forKey:MPNowPlayingInfoPropertyElapsedPlaybackTime];
         //设置锁屏状态下屏幕显示播放音乐信息
         [[MPNowPlayingInfoCenter defaultCenter] setNowPlayingInfo:dict];
     

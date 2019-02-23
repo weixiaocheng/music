@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "musicList/MusicListViewController.h"
+#import <AVFoundation/AVFoundation.h>
 @interface AppDelegate ()
 
 @end
@@ -22,6 +23,10 @@
     UINavigationController *navC = [[UINavigationController alloc] initWithRootViewController:musciList];
     self.window.rootViewController = navC;
     [self.window makeKeyAndVisible];
+    
+    AVAudioSession  *session  =  [AVAudioSession  sharedInstance];
+    [session setActive:YES error:nil];
+    [session setCategory:AVAudioSessionCategoryPlayback error:nil];
     
     [[UIApplication  sharedApplication] beginReceivingRemoteControlEvents];
     return YES;
