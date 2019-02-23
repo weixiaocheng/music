@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "../../musicList/MusicLrcOBJ.h"
+#import <AVFoundation/AVFoundation.h>
 @class CrlView;
 @protocol CrlViewDelegate <NSObject>
 
@@ -21,6 +22,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, copy) NSString *imageName;
 @property (nonatomic, strong) NSArray<MusicLrcOBJ*> *datasoure;
 @property (nonatomic, weak)id<CrlViewDelegate>delegate;
+@property (nonatomic, strong)AVAudioPlayer *play;
 @end
 
 NS_ASSUME_NONNULL_END

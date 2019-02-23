@@ -790,4 +790,11 @@
     
     return image;
 }
+
++ (NSString *)stringWithTime: (double)time{
+    NSDate *date = [NSDate dateWithTimeIntervalSince1970:time];
+    NSDateFormatter *dataformatter = [[NSDateFormatter alloc] init];
+    dataformatter.dateFormat = @"mm:ss";
+    return [dataformatter stringFromDate:date];
+}
 @end

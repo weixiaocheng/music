@@ -152,7 +152,7 @@
 {
     _play = play;
     // 首先移除 再 添加 运行时
-    self.timeLable.text = [self stringWithTime: self.play.duration];
+    self.timeLable.text = [CommonMethod stringWithTime: self.play.duration];
     [self addCurrentTimer];
 }
 
@@ -191,11 +191,6 @@
     self.progressView.width = silderCenter.x;
 }
 
-- (NSString *)stringWithTime: (double)time{
-    NSDate *date = [NSDate dateWithTimeIntervalSince1970:time];
-    NSDateFormatter *dataformatter = [[NSDateFormatter alloc] init];
-    dataformatter.dateFormat = @"mm:ss";
-    return [dataformatter stringFromDate:date];
-}
+
 
 @end

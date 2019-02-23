@@ -7,12 +7,16 @@
 //  显示歌词 和 歌曲的背景
 
 #import "CrlView.h"
+#import "../../musicTools/YUTimer.h"
 
 @interface CrlView ()<UITableViewDelegate, UITableViewDataSource>
 @property (nonatomic, strong) UIButton *backBtn;
 @property (nonatomic, strong) UIButton *changeBtn;
 @property (nonatomic, strong) UIImageView *backview;
 @property (nonatomic, strong) UITableView *tableView;
+@property (nonatomic, assign) double currentTimeLin;
+@property (nonatomic, assign) NSInteger currentIndex;
+@property (nonatomic, strong) YUTimer *timer;
 @end
 
 @implementation CrlView
@@ -76,8 +80,34 @@
 - (void)setDatasoure:(NSArray<MusicLrcOBJ *> *)datasoure
 {
     _datasoure = datasoure;
+    _tableView.contentOffset = CGPointMake(0, -self.tableView.frame.size.height/2);
+    self.currentIndex = 0;
     [self.tableView reloadData];
+    [self.timer resume];
 }
+
+- (YUTimer *)timer
+{
+    if (!_timer && self.play) {
+        _timer = [[YUTimer alloc] init];
+        [_timer startTimerWithSpace:0.1 block:^(BOOL result) {
+            if (result) {
+                
+            }
+            [self updateLrcView];
+        }];
+    }
+    return _timer;
+}
+
+- (void)updateLrcView
+{
+    if (self.play == nil) {
+        return;
+    }
+    self.currentTimeLin = self.play.currentTime;
+}
+
 
 - (UITableView *)tableView
 {
@@ -90,7 +120,7 @@
         _tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
         _tableView.hidden = true;
         _tableView.tableHeaderView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, KSCREENWIDTH, 80)];
-        _tableView.tableFooterView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, KSCREENWIDTH, 80)];
+        _tableView.tableFooterView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, KSCREENWIDTH, 100)];
     }
     return _tableView;
 }
@@ -120,6 +150,11 @@
     }
     MusicLrcOBJ *lrcObj = self.datasoure[indexPath.row];
     cell.textLabel.text = lrcObj.word;
+    if (self.currentIndex == indexPath.row) {
+        cell.textLabel.font = [UIFont systemFontOfSize:17];
+    }else{
+         cell.textLabel.font = [UIFont systemFontOfSize:14];
+    }
     return cell;
 }
 
@@ -135,5 +170,46 @@
 {
     self.tableView.hidden = !self.tableView.hidden;
 }
+
+
+- (void)setCurrentTimeLin: (double)currentTimeLin
+{
+    if (currentTimeLin == 0) {
+        self.currentIndex = 0;
+        return;
+    }
+    // 传入的时间字符串
+    NSString *currentTime = [CommonMethod stringWithTime:currentTimeLin];
+    
+    for (NSInteger i = self.currentIndex; i < self.datasoure.count - 1; i ++) {
+        // 需要获取 时间的 和 下一条数据
+        MusicLrcOBJ *currentObj = self.datasoure[i];
+        MusicLrcOBJ *nextObj = self.datasoure[i + 1];
+        
+        // 进行比较
+        if ([currentTime compare:nextObj.time] == NSOrderedAscending && [currentTime compare:currentObj.time] == NSOrderedDescending) {
+            self.currentIndex = i ;
+            return;
+        }
+    }
+}
+
+- (void)setCurrentIndex:(NSInteger)currentIndex
+{
+    if (currentIndex == _currentIndex) {
+        return;
+    }
+    if (currentIndex == 0) {
+        _currentIndex = currentIndex;
+        return;
+    }
+    NSMutableArray *mArray = [NSMutableArray array];
+    [mArray addObject:[NSIndexPath indexPathForRow:currentIndex inSection:0]];
+    [mArray addObject:[NSIndexPath indexPathForRow:self.currentIndex inSection:0]];
+    _currentIndex = currentIndex;
+    [self.tableView reloadRowsAtIndexPaths:mArray withRowAnimation:UITableViewRowAnimationAutomatic];
+    [self.tableView scrollToRowAtIndexPath:[NSIndexPath indexPathForRow:self.currentIndex inSection:0] atScrollPosition:UITableViewScrollPositionMiddle animated:true];
+}
+
 
 @end

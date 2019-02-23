@@ -121,5 +121,6 @@
 ///判断是否加入收藏
 +(void)isFavoritesOfProductId:(NSString *)ProductId returnCode:(void(^)(bool isFavorites))cellBack;
 + (UIImage *)setImage :(NSString *)imageName  imageWithColor:(UIColor *)color;
++ (NSString *)stringWithTime: (double)time;
 @end
 

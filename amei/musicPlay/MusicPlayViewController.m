@@ -10,6 +10,8 @@
 #import "view/BottomView.h"
 #import "view/CrlView.h"
 #import "view/ShowView.h"
+#import <MediaPlayer/MediaPlayer.h>
+
 @interface MusicPlayViewController ()<BottomViewDelegate,CrlViewDelegate>
 @property (nonatomic, strong) MusicManager *musicManager;
 @property (nonatomic, strong) BottomView *bottomView;
@@ -51,11 +53,13 @@
     }
     _musicObj = musicObj;
     self.showView.play = [self.musicManager playMusicMusicObj:musicObj musicPlayView:self];
+    self.crlView.play = self.showView.play;
     self.crlView.imageName = musicObj.icon;
     self.bottomView.isPlay = true;
     _musicObj.isPlay = true;
     [self.showView setUpSiger:musicObj.singer name:musicObj.name];
     self.crlView.datasoure = [self.listManager getLrcsWithMusicObj:musicObj];
+    [self setLockingInfoMusic:musicObj];
 }
 
 - (void)setUpView
@@ -118,4 +122,68 @@
     self.musicObj = [self.listManager nextMusic:self.musicObj];
 }
 
+ - (void)remoteControlReceivedWithEvent:(UIEvent *)event
+{
+    if  (event.type  ==  UIEventTypeRemoteControl)  {
+        
+        switch  (event.subtype)  {
+                
+            case UIEventSubtypeRemoteControlTogglePlayPause:
+                
+                [self.musicManager pauseMusicMusicObj:self.musicObj];
+                
+                NSLog(@"RemoteControlEvents: pause");
+                
+                break;
+                
+            case UIEventSubtypeRemoteControlNextTrack:
+                
+                
+                self.musicObj = [self.listManager nextMusic:self.musicObj];
+                NSLog(@"RemoteControlEvents: playModeNext");
+                
+                break;
+                
+            case UIEventSubtypeRemoteControlPreviousTrack:
+                
+                self.musicObj = [self.listManager previousMusic:self.musicObj];
+                
+                NSLog(@"RemoteControlEvents: playPrev");
+                
+                break;
+                
+            default:
+                
+                break;
+                
+        }
+        
+    }
+}
+
+
+- (void)setLockingInfoMusic: (MusicOBJ *)musicObj
+{
+    
+        NSMutableDictionary *dict = [[NSMutableDictionary alloc] init];
+        //歌曲名称
+        [dict setObject:musicObj.name forKey:MPMediaItemPropertyTitle];
+        //演唱者
+        [dict setObject:musicObj.singer forKey:MPMediaItemPropertyArtist];
+        //专辑名
+        [dict setObject:@"我是大爷" forKey:MPMediaItemPropertyAlbumTitle];
+        //图片
+        MPMediaItemArtwork *artwork = [[MPMediaItemArtwork alloc] initWithImage:[UIImage imageNamed:musicObj.singerIcon]];
+        
+        [dict setObject:artwork forKey:MPMediaItemPropertyArtwork];
+        //音乐剩余时长
+        [dict setObject:[NSNumber numberWithDouble:3.5] forKey:MPMediaItemPropertyPlaybackDuration];
+        //设置锁屏状态下屏幕显示播放音乐信息
+        [[MPNowPlayingInfoCenter defaultCenter] setNowPlayingInfo:dict];
+    
+}
+
+-(BOOL)canBecomeFirstResponder {
+    return YES;
+}
 @end
