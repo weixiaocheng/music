@@ -55,9 +55,8 @@
     self.bottomView.isPlay = true;
     _musicObj.isPlay = true;
     [self.showView setUpSiger:musicObj.singer name:musicObj.name];
+    self.crlView.datasoure = [self.listManager getLrcsWithMusicObj:musicObj];
 }
-
-
 
 - (void)setUpView
 {

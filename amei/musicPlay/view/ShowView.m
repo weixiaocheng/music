@@ -102,7 +102,7 @@
 // 搭建tap 事件
 - (void)tapView: (UITapGestureRecognizer *)tap
 {
-    NSLog(@"\ntap : %@ \n",tap);
+    
     CGPoint point = [tap locationInView:self.progress_backView];
     CGPoint silderCenter = self.silderBtn.center;
     if (point.x + self.silderBtn.width/2 > self.progress_backView.width) {
@@ -119,7 +119,7 @@
 
 - (void)panView: (UIPanGestureRecognizer *)pan
 {
-    NSLog(@"\npan : %@ \n",pan);
+    
     if (pan.state == UIGestureRecognizerStateBegan)
     {
         NSLog(@"停止 runloop");

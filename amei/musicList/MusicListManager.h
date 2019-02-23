@@ -20,6 +20,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 // 获取下一曲
 - (MusicOBJ *)nextMusic: (MusicOBJ *)passmusicObj;
+// 获取一下歌词
+- (NSArray *)getLrcsWithMusicObj: (MusicOBJ *)musicObj;
 @end
 
 NS_ASSUME_NONNULL_END
